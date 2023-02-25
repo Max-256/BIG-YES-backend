@@ -4,13 +4,19 @@ const mongoose = require('mongoose');
 const Goods = require('./routes/Goods');
 const User = require('./routes/users');
 const Auth = require('./routes/Auth');
+const error = require('./middleware/error');
+require('express-async-errors');
 const app = express();
 
-app.use(express.json());
 
+
+
+
+app.use(express.json());
 app.use('/api/goods', Goods);
 app.use('/api/user', User);
 app.use('/api/auth', Auth);
+app.use(error);
 
 
 
