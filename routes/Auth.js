@@ -1,8 +1,9 @@
 
 const express = require('express');
-const {User, validateUser} = require('../models/User');
+const {User} = require('../models/User');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
+const Joi = require('joi-browser');
 const config = require('config');
 const router = express.Router();
 
@@ -26,6 +27,13 @@ router.post("/", async (req, res) => {
     res.send(token);    
 });
 
+const validateUser = (user) => {
+    const userSchema = {
+        email: Joi.string().trim().email().max(255).required(),
+        password: Joi.string().trim().max(255).required()
+    };
 
+    return Joi.validate(user, userSchema);
+}
 
 module.exports = router;
