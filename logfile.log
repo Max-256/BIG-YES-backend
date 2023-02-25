@@ -110,3 +110,17 @@
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T09:39:22.389Z"}
 {"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T09:42:27.219Z"}
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T09:42:27.246Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T16:41:08.612Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T16:41:08.636Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T17:08:16.729Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T17:08:16.988Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T18:01:06.226Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:01:06.272Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T18:52:21.022Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:52:21.328Z"}
+{"message":"Cast to Number failed for value \"118d777531338\" (type string) at path \"phoneNumber\" for model \"User\"","stack":"CastError: Cast to Number failed for value \"118d777531338\" (type string) at path \"phoneNumber\" for model \"User\"\n    at model.Query.exec (/home/maxwell/bigyes/node_modules/mongoose/lib/query.js:4927:21)\n    at model.Query.Query.then (/home/maxwell/bigyes/node_modules/mongoose/lib/query.js:5026:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","stringValue":"\"118d777531338\"","kind":"Number","value":"118d777531338","path":"phoneNumber","reason":{"generatedMessage":true,"code":"ERR_ASSERTION","actual":false,"expected":true,"operator":"=="},"valueType":"string","level":"error","timestamp":"2023-02-25T18:53:53.910Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T18:54:07.418Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:54:07.449Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:56:01.011Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T18:56:04.691Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:56:04.719Z"}
