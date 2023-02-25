@@ -1,0 +1,4 @@
+{
+    "jwtPrivateKey": "privateKey",
+    "db": "bigyes_db"
+}
