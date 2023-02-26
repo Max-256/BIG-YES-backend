@@ -144,3 +144,8 @@
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-26T07:33:54.156Z"}
 {"level":"info","message":"listening on port 3000","timestamp":"2023-02-26T11:42:25.487Z"}
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-26T11:42:25.531Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-26T12:16:17.627Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-26T12:16:17.660Z"}
+{"message":"Cast to ObjectId failed for value \"63fb0c8beef715fa24d8841v\" (type string) at path \"_id\" for model \"Good\"","stack":"CastError: Cast to ObjectId failed for value \"63fb0c8beef715fa24d8841v\" (type string) at path \"_id\" for model \"Good\"\n    at model.Query.exec (/home/maxwell/bigyes/node_modules/mongoose/lib/query.js:4927:21)\n    at model.Query.Query.then (/home/maxwell/bigyes/node_modules/mongoose/lib/query.js:5026:15)\n    at processTicksAndRejections (internal/process/task_queues.js:95:5)","stringValue":"\"63fb0c8beef715fa24d8841v\"","kind":"ObjectId","value":"63fb0c8beef715fa24d8841v","path":"_id","reason":{},"valueType":"string","level":"error","timestamp":"2023-02-26T12:20:35.518Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-26T12:20:46.965Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-26T12:20:46.987Z"}

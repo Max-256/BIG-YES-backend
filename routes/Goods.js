@@ -23,7 +23,10 @@ router.get('/', async (req, res) => {
 });
 
 router.get('/:id', async (req, res) => {
+    const good = await Good.findById(req.params.id);
+    if(!good) return res.status(404).send('Product not found');
 
+    res.send(good);
 });
 
 router.delete('/:id', async (req, res) => {
