@@ -140,3 +140,5 @@
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T18:59:30.823Z"}
 {"level":"info","message":"listening on port 3000","timestamp":"2023-02-25T19:10:59.835Z"}
 {"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-25T19:10:59.866Z"}
+{"level":"info","message":"listening on port 3000","timestamp":"2023-02-26T07:33:54.121Z"}
+{"level":"info","message":"connection to mongodb://localhost/bigyes succesful","timestamp":"2023-02-26T07:33:54.156Z"}
