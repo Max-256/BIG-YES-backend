@@ -18,7 +18,7 @@ router.put('/:id', async (req, res) => {
 });
 
 router.get('/', async (req, res) => {
-    const goods = await Good.find().sort("datePosted");
+    const goods = await Good.find().sort("-datePosted");
     res.send(goods);
 });
 
@@ -32,6 +32,5 @@ router.get('/:id', async (req, res) => {
 router.delete('/:id', async (req, res) => {
 
 });
-
 
 module.exports = router;
