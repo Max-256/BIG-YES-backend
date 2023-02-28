@@ -1,9 +1,10 @@
 
 const express = require('express');
 const {Good, valiateGood} = require('../models/Good');
+const auth = require('../middleware/auth');
 const router = express.Router();
 
-router.post('/', async (req, res) => {
+router.post('/', auth, async (req, res) => {
     const {error} = valiateGood(req.body);
     if(error) return res.status(400).send(error.details[0].message);
 
@@ -13,7 +14,7 @@ router.post('/', async (req, res) => {
     res.send(good);
 });
 
-router.put('/:id', async (req, res) => {
+router.put('/:id', auth, async (req, res) => {
     const good = await Good.findById(req.params.id);
     if(!good) return res.status(404).send('Product not found');
 
@@ -37,7 +38,7 @@ router.get('/:id', async (req, res) => {
     res.send(good);
 });
 
-router.delete('/:id', async (req, res) => {
+router.delete('/:id', auth, async (req, res) => {
     const good = await Good.findById(req.params.id);
     if(!good) return res.status(404).send("Product not found!");
 
