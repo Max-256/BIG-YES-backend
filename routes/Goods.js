@@ -30,7 +30,11 @@ router.get('/:id', async (req, res) => {
 });
 
 router.delete('/:id', async (req, res) => {
+    const good = await Good.findById(req.params.id);
+    if(!good) return res.status(400).send("Product not found!");
 
+    await Good.deleteOne({"_id": req.params.id});
+    res.send(good);
 });
 
 module.exports = router;
