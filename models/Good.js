@@ -44,6 +44,11 @@ const goodSchema = new mongoose.Schema({
         required: true
     },
 
+    location: {
+        type: String,
+        required: true
+    },
+
     datePosted: {
         type: Date,
         default: Date.now
@@ -61,6 +66,7 @@ const valiateGood = (good) => {
         condition: Joi.string().trim().required(),
         seller: Joi.string().trim().required(),
         contact: Joi.number().required(),
+        location: Joi.string().trim().required()
     }
 
     return Joi.validate(good, goodSchema);
